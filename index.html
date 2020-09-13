@@ -8,7 +8,7 @@
 <body>
     <section id="nav">
         <ul>
-            <li><h1>Crunchy Peanut Butters</h1></li>
+            <li><h1><a href="#">Crunchy Peanut Butter</a></h1></li>
             <li>
                 <ul>
                     <li><a href="#why">Why</a></li>
@@ -22,6 +22,15 @@
         </ul>
     </section>
     <section id="body">
+        <section id="welcome">
+            <ul>
+                <ul>
+                    <li>Welcome To</li>
+                    <li>Crunchy Peanut Butter</li>
+                    <li>Single Page Site!</li>
+                </ul>
+            </ul>
+        </section>
         <section id="why">
             <h2>Crunchy vs Creamy</h2>
             <ul>
@@ -104,6 +113,9 @@
     </section>
     <section id="footer">
         <footer>
+            <label for="subscribe">Subscribe: </label>
+            <input id="subscribe" type="email">
+            <button>Submit</button>
             <p>Information from <a href="https://www.wikipedia.org/">Wikipedia</a>, <a href="https://www.thrillist.com/">Thrillist</a></p>
         </footer>
     </section>
@@ -112,6 +124,7 @@
     /*General*/
     ul{
         list-style: none;
+        padding: 0;
     }
     figcaption{
         align-content: center;
@@ -131,13 +144,23 @@
         margin: 0;
         align-items: center;
         margin-right: 1em;
+        padding: 0 0 0 1em;
     }
     section#nav ul li{
         padding-left: 10px;
     }
     section#nav a{
         text-decoration: none;
-        color: blue;
+        color: black;
+    }
+    /*Welcome*/
+    section#welcome{
+        height: 75vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-image: url("images/TMFSpin.gif");
+        background-size: 100vh;
     }
     /*Body*/
     button{
@@ -166,6 +189,18 @@
     footer{
         display: flex;
         justify-content: flex-end;
+        align-items: center;
+    }
+    input{
+        height: 15px;
+    }
+    footer button{
+        padding: .4em;
+        margin: 1em;
+        border: none;
+        background-color: cornflowerblue;
+        color: white;
+        font-size: .75em;
     }
 </style>
 </html>
